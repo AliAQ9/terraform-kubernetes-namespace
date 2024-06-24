@@ -15,3 +15,8 @@ variable "annotations" {
     type = map(string) 
     default = {}
 }
+
+variable pod_limit {
+  description = "max number of pods"
+  default = 100
+}
