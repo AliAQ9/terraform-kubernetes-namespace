@@ -13,5 +13,5 @@ variable "labels" {
 variable "annotations" {
     description = ""
     type = map(string) 
-    default {}
+    default = {}
 }
