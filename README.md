@@ -3,7 +3,13 @@
 #### Please paste below code
 ```
 module "demo" {
-  source = "AliAQ9/namespace/kubernetes"
+  source = "../"
   name   = "this-ns-demo"
+  labels = {
+    "env" = "demo"
+  }
+  annotations = {
+    "created-by" = "terraform"
+  }
 }
 ```
